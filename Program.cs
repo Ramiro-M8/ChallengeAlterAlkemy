@@ -76,8 +76,8 @@ builder.Services.AddAuthentication(configureOptions: options =>
     {
         ValidateIssuer = true,
         ValidateAudience = true,
-        ValidAudience = "https://localhost:44353", //Cambiar esto por el localhost que tengas
-        ValidIssuer = "https://localhost:44353", //Cambiar esto por el localhost que tengas
+        ValidAudience = "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
+        ValidIssuer = "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(s:"KeySecretaSuperLargaDeAUTORIZACION"))
     };
 });

@@ -108,8 +108,8 @@ namespace IconosGeograficos.Controladores
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(s: "KeySecretaSuperLargaDeAUTORIZACION"));
 
             var token = new JwtSecurityToken(
-                issuer: "https://localhost:44353", //Cambiar esto por el localhost que tengas
-                audience: "https://localhost:44353", //Cambiar esto por el localhost que tengas
+                issuer: "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
+                audience: "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
                 expires: DateTime.Now.AddHours(1), //El token dura 1 hora
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256));
