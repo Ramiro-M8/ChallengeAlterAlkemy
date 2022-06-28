@@ -44,7 +44,10 @@
       + "APIGeoConnection" - Escribiendo el nombre de su servidor
       + "APIUsuConnection" - Escribiendo el nombre de su servidor
 
-  + AutenticacionControlador.cs
+  + Controladores/AutenticacionControlador.cs
     + Modificar las variables:
       + ValidAudience = "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
       + ValidIssuer = "https://localhost:xxxx", //Cambiar esto por el localhost que tengas
+      
+  + Properties/launchSettings.json:
+    + Modificar solo LocalHost y sslPort, por el que utilizen
